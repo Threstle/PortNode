@@ -1,0 +1,17 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic,900italic,900', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js')
+    script(src='/js/script.js')
+
+  body
+    include leftSide.jade
+    include menu.jade
+    include rightSide.jade
+   
+
+    footer
