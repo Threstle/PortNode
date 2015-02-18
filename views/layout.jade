@@ -11,7 +11,20 @@ html
   body
     include leftSide.jade
     include menu.jade
-    include rightSide.jade
+    
+    #rightSide.rightSidePush
+      #rightMenu.rightMenuPush
+          ul
+            li
+              a(href='#section1') SECTION 1
+            li
+              a(href='#section2') SECTION 1
+            li
+              a(href='#section3') SECTION 1
+        span#showButton
+          span
+        #contentRight
+            block contentRight
    
 
     footer
