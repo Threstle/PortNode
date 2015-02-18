@@ -2,6 +2,10 @@ $(function() {
 
   $('#loader').delay(2000).fadeOut(200);
 
+  //Logo anim
+
+
+
   var currentSect = "#section1";
   resize();
 

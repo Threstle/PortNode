@@ -140,7 +140,7 @@ content{
 #floatingMenu ul{
   list-style: none;
   height: 20%;
-  margin-top: 50px;
+  margin-top: 35%;
   float: left;
 }
 
@@ -208,6 +208,28 @@ content{
   margin-right: auto;
   width: 100%;
   opacity: 0.3;
+  position: relative;
+  height: 225px;
+}
+
+#logo img{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: absolute;
+}
+
+#logo img:nth-child(1){
+  -webkit-animation: spin linear 40s infinite;
+  -webkit-animation-direction:reverse;
+}
+
+#logo img:nth-child(2){
+  -webkit-animation: spin linear 20s infinite;
+}
+
+#logo img:nth-child(3){
+  -webkit-animation: spin linear 10s infinite;
 }
 
 #logo canvas{
@@ -327,7 +349,7 @@ canvas{
 
 
 #contentRight{
-  padding: 3%;
+  padding: 0%;
   min-height: 955px;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
