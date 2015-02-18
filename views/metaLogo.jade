@@ -31,17 +31,17 @@ script(type='text/javascript').
       MetaBall.prototype.move = function(){
       var rand = Math.random();
       if(rand < 0.5){
-      this.x0 += 0.1;
+      this.x0 += 0.001;
       }
       else if(rand > 0.5){
       this.x0 -= 0.1;
       }
       rand = Math.random();
       if(rand < 0.5){
-      this.y0 += 0.1;
+      this.y0 += 0.001;
       }
       else if(rand > 0.5){
-      this.y0 -= 0.1;
+      this.y0 -= 0.001;
       }
       this.x0 += this.dirX;
       this.y0 += this.dirY;
