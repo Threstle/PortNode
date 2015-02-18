@@ -31,20 +31,20 @@ script(type='text/javascript').
       MetaBall.prototype.move = function(){
       var rand = Math.random();
       if(rand < 0.5){
-      this.x0 += 0.001;
+      this.x0 += 0.0001;
       }
       else if(rand > 0.5){
       this.x0 -= 0.1;
       }
       rand = Math.random();
       if(rand < 0.5){
-      this.y0 += 0.001;
+      this.y0 += 0.0001;
       }
       else if(rand > 0.5){
-      this.y0 -= 0.001;
+      this.y0 -= 0.0001;
       }
-      this.x0 += this.dirX;
-      this.y0 += this.dirY;
+      this.x0 += this.dirX/10;
+      this.y0 += this.dirY/10;
       this.collide();
       }
       MetaBall.prototype.collide = function(){
