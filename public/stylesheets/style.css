@@ -328,6 +328,9 @@ canvas{
 
 #contentRight{
   padding: 3%;
+  min-height: 955px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 
 }
 
