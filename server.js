@@ -1,7 +1,7 @@
 /*
  * Module dependencies
  */
-var express = require('express')
+/*var express = require('express')
   , stylus = require('stylus')
   , nib = require('nib')
 
@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
   res.render('aboutPage','rightSide'
   )
 })
-app.listen(8080)
+app.listen(8080)*/
 
 var express = require('express')
   , stylus = require('stylus')
@@ -49,7 +49,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
 
 	// ejs render automatically looks in the views folder
-	res.render('index','rightSide')
+	res.render('aboutPage','rightSide')
 });
 
 app.listen(port, function() {
