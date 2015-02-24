@@ -10,15 +10,34 @@ html
     script(src='/js/script.js')
 
   body
-    include leftSide.jade
-    include menu.jade
     
-    #rightSide.rightSidePush
+    nav#menuLeftSide.transitionClass
+      ul.transitionClass
+        li
+          h2 Ī̤
+          a Présentation
+        li
+          h2 I᷇I͖᷇᷇
+          a.transitionClass Compétences
+        li
+          h2 I̷͗͗I͗́͗I͗ͬ͗
+          a.transitionClass Experience
+        li
+          h2 I̲V̗̆̈
+          a.transitionClass Timbre
+        li
+          h2 V̺᷈᷈
+          a.transitionClass Russian Planet
+        li
+          h2 V̗̀̔I̥͗̀
+          a.transitionClass Graveyard Shift
+
+    #rightSide.transitionClass
 
         span#showButton.buttonMenu
           span
         #contentRight
             block contentRight
    
-    #menuRightSide
+    
     footer

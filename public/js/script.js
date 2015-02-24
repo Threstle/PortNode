@@ -2,9 +2,26 @@ $(function() {
 
   $('#loader').delay(2000).fadeOut(200);
 
+    $('.section').css('height',$(window).height());
+
+
+  //Menu gauche
+
+    $('nav').mouseenter(function(){
+        $('nav').addClass('navExpand');
+        $('#rightSide').addClass('rightSideShrink')
+
+    })
+
+    $('nav').mouseleave(function(){
+        $('nav').removeClass('navExpand');
+        $('#rightSide').removeClass('rightSideShrink')
+    })
+
+
   //Logo anim
 
-
+/*
 
   var currentSect = "#section1";
   resize();
@@ -145,46 +162,6 @@ $(function() {
 
 
 
-    /*	$('.selector').stop();
-         $('#selectorLeft').animate({
-              top:$(event.target).parent().position().top+'px',
-              height:$(event.target).parent().height()
-          }, 2000,"easeInOutQuad",function(){
-              //$('#leftSide').scrollTop(800);
-          		 var nb;
-          		 var content = "";
-               var data = $(event.target).parent().attr('data');
-               $('#leftSide').animate({  
-                  scrollTop:$("#"+data).offset().top  
-                }, 'slow');
-
-                 
-
-		         switch(data){
-		         	case "app":
-		         	break;
-		         	case "exp":
-		         	break;
-		         	case "sit":
-		         	break;
-		         	case "jeu":
-		         	break;
-              case "con":
-              
-              break;
-		         }
-
-	         $('#leftSide ul').css('height',$(window).height()-130);
-		         $('#leftSide ul li').css('height',100/nb +'%');
-
-
-
-
-          });*/
-         /*$('#selectorRight').animate({
-              top:$(event.target).parent().position().top+'px',
-              height:$(event.target).parent().height()
-          }, 3000,"easeInOutQuad");*/
 
     
           
@@ -198,7 +175,7 @@ $(function() {
     var addLi = function(nom,image){
     	var li = "<li><img src='img/"+image+".png'></img></li>";
     	return li;
-    }
+    }*/
 
 
  });
