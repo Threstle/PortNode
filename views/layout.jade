@@ -6,6 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js')
+    script(src='/lib/tween/index.js')
     script(src='/js/script.js')
 
   body
@@ -13,9 +14,8 @@ html
     include menu.jade
     
     #rightSide.rightSidePush
-      #rightMenu.rightMenuPush
-          block rightMenu
-        span#showButton
+
+        span#showButton.buttonMenu
           span
         #contentRight
             block contentRight

@@ -128,6 +128,8 @@ $(function() {
 
     })
 
+
+
     $('#showButton').click(function(event){
       $('#showButton').css('opacity','0');
       $('#hideButton').delay( 3000 ).css('opacity','1');
@@ -143,7 +145,7 @@ $(function() {
 
 
 
-    	$('.selector').stop();
+    /*	$('.selector').stop();
          $('#selectorLeft').animate({
               top:$(event.target).parent().position().top+'px',
               height:$(event.target).parent().height()
@@ -172,17 +174,17 @@ $(function() {
               break;
 		         }
 
-/*		         $('#leftSide ul').css('height',$(window).height()-130);
-		         $('#leftSide ul li').css('height',100/nb +'%');*/
+	         $('#leftSide ul').css('height',$(window).height()-130);
+		         $('#leftSide ul li').css('height',100/nb +'%');
 
 
 
 
-          });
-         $('#selectorRight').animate({
+          });*/
+         /*$('#selectorRight').animate({
               top:$(event.target).parent().position().top+'px',
               height:$(event.target).parent().height()
-          }, 3000,"easeInOutQuad");
+          }, 3000,"easeInOutQuad");*/
 
     
           

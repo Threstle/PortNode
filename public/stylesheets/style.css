@@ -100,11 +100,10 @@ h1{
   color: rgba(0,160,148,1);
 }
 
-content{
-  transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -webkit-transition: all 5s ease;
-  -o-transition: all 5s ease;
+content{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.0010); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   float: left;
   width: 100%;
 }
@@ -135,6 +134,7 @@ content{
 
 #floatingMenu h1{
   color: white;
+  font-size: 2vw;
 }
 
 #floatingMenu ul{
@@ -172,26 +172,18 @@ content{
 }
 
 #hideButton{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  background-color: white;
-  opacity: 0;
-  z-index: 2;
-  height: 30px;
-  width: 30px;
-  left: 84.5%;
-  top: 10px;
-  position: relative;
-  box-shadow: 1px 1px 1px rgba(0,160,148,0) inset;
+background-color: white;
+opacity: 0;
+left: 75.5%;
+top: 3vh;
 }
 
-#hideButton:hover{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+
+
+#hideButton:hover{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 01.070, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
 }
 
 #hideButton span{
@@ -203,13 +195,25 @@ content{
   background-color: rgba(0,160,148,1);
 }
 
+.buttonMenu{
+ -webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+  1 -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
+  z-index: 2;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0,160,148,0) inset;
+}
+
 #logo{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   opacity: 0.3;
   position: relative;
-  height: 225px;
+  height: 22%;
 }
 
 #logo img{
@@ -222,14 +226,19 @@ content{
 #logo img:nth-child(1){
   -webkit-animation: spin linear 40s infinite;
   -webkit-animation-direction:reverse;
+  -moz-animation: spin linear 40s infinite;
+  -moz-animation-direction:reverse;
+  
 }
 
 #logo img:nth-child(2){
   -webkit-animation: spin linear 20s infinite;
+  -moz-animation: spin linear 20s infinite;
 }
 
 #logo img:nth-child(3){
   -webkit-animation: spin linear 10s infinite;
+  -moz-animation: spin linear 10s infinite;
 }
 
 #logo canvas{
@@ -237,10 +246,10 @@ content{
 }
 
 #floatingMenu{
-    transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+ -webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+  1 -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   float: left;
   height: 100%;
   z-index: 0;
@@ -277,15 +286,14 @@ canvas{
   float: left;
 }
 
-#leftSide{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+#leftSide{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.1000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   float: left;
   width: 10%;
   min-height: 100px;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 #leftSide ul{
@@ -303,10 +311,10 @@ canvas{
   float: left;
   height: 100%;
   width: 100%;
-    transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+ -webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+  1 -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
          -o-filter: grayscale(100%);
@@ -314,11 +322,10 @@ canvas{
             filter: grayscale(100%); 
 }
 
-#leftSide ul li img:hover{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+#leftSide ul li img:hover{-webkit-transition: all 500ms cubic-bezier(0.860, 10.000, 0.070, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
    -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);
           -o-filter: grayscale(0%);
@@ -335,15 +342,14 @@ canvas{
 
 
 
-#rightSide{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+#rightSide{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 11.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   float: left;
   height: 100%;
   width: 64%;
-  overflow-y: scroll !important;
+  overflow: hidden !important;
 }
 
 
@@ -376,11 +382,10 @@ canvas{
   text-align: justify;
 }
 
-#contentRight *{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
+#contentRight *{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.0170, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   margin-left: auto;
   margin-right: auto;
   /*line-height: 35px;*/
@@ -406,11 +411,10 @@ canvas{
 }
 
 
-#contentRight #contactPhoto{
-  transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1.5s ease;
+#contentRight #contactPhoto{-webkit-transition: all 500ms cubic-bezier(0.8601, 0.000, 0.070, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */e;
   width: 20%;
   border-radius: 360px;
   margin-right: 40%;
@@ -419,7 +423,10 @@ canvas{
 
 #floatingMenu #contactButton{
   box-shadow: 1px 1px 1px rgba(0,160,148,1) inset;
-  -webkit-transition: all 1s ease;
+  -webk-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.0001); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   background-color: none;
   padding: 6px;
   color: white;
@@ -427,36 +434,37 @@ canvas{
 
 #floatingMenu #contactButton:hover{
   box-shadow: 1px 1px 1px rgba(0,0,0,1) inset;
-  -webkit-transition: all 1s ease;
+  -webk-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.0001); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   background-color: white;
   color: rgba(0,160,148,1);
 }
 
-#rightMenu{
-  box-shadow: 1px 1px 1px rgba(255,255,255,0) inset;
-  transition:all 1s ease;
-  -webkit-transition:all 1s ease;
-  -moz-transition:all 1s ease;
-  -o-transition:all 1s ease;
-  position: absolute;
+/*#rightMenu{
+  box-shadow: 1px 1px 1px rgba(255,255,255,0) inset;-webkit-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    position: absolute;
   padding: 1%;
   margin-left: 1%;
 
   background-color: rgba(0,160,148,1);
-  top: 10px;
+  top: 1vh;
   opacity: 0.6;
 
 }
 
 #rightMenu:hover{
-  box-shadow: 1px 1px 1px rgba(0,0,0,1) inset;
-  transition:all 1s ease;
-  -webkit-transition:all 1s ease;
-  -moz-transition:all 1s ease;
-  -o-transition:all 1s ease;
-  /*box-shadow: 1px 1px 1px;*/
+  box-shadow: 1px 1px 1px rgba(0,0,0,1) inset;-webkit-transition: all 500ms 1cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        box-shadow: 1px 1px 1px;
   opacity: 1;
-}
+}*/
 
 
 
@@ -472,26 +480,19 @@ canvas{
 }
 
 #showButton{
-  width: 30px;
-  height: 30px;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  position: absolute;
-  background-color: rgba(0,160,148,1);
-  top: 130px;
-  opacity: 1;
-  left: 2%;
-  opacity: 0.6;
-  box-shadow: 1px 1px 1px rgba(255,255,255,0) inset;
+position: absolute;
+background-color: rgba(0,160,148,1);
+top: 3vh;
+opacity: 1;
+left: 4vw;
+opacity: 0.6;
 }
 
 #showButton:hover{
-    transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
+ -webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+  1 -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
   box-shadow: 1px 1px 1px rgba(0,0,0,1) inset;
   opacity: 1;
 }
@@ -647,11 +648,10 @@ canvas{
 
 
 
-.exp{
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
+.exp{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);1 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
 
   color: white;
   width: 70%;
@@ -663,11 +663,10 @@ canvas{
   overflow: hidden;
 }
 
-.dip{
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
+.dip{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);1 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
 
   color: white;
   width: 70%;
@@ -750,12 +749,10 @@ canvas{
   width: 95%;
 }
 
-#corner{
-  transition:all 1s ease;
-  -webkit-transition:all 1s ease;
-  -moz-transition:all 1s ease;
-  -o-transition:all 1s ease;
-  right: 0;
+#corner{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.0010); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */  right: 0;
   bottom: 0;
   width: 300px;
   position: absolute;
@@ -763,11 +760,10 @@ canvas{
   width: 150px;
 }
 
-#corner:hover{
-  transition:all 1s ease;
-  -webkit-transition:all 1s ease;
-  -moz-transition:all 1s ease;
-  -o-transition:all 1s ease;
+#corner:hover{-webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.0701, 1.000); 
+   -moz-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+     -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+        transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */  
   opacity: 1;
   width: 200px;
 }
