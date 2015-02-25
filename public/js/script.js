@@ -13,10 +13,61 @@ $(function() {
 
     })
 
+    $('nav ul li').mouseenter(function(){
+      $(this).find('a').css('border-color','white');
+    });
+
+    $('nav ul li').mouseleave(function(){
+      $(this).find('a').css('border-color','black');
+    });
+
     $('nav').mouseleave(function(){
         $('nav').removeClass('navExpand');
         $('#rightSide').removeClass('rightSideShrink')
     })
+
+    $('nav ul li').click(function(){
+       event.preventDefault();
+       var full_url = $(this).find('a').attr('href');
+        //get the top offset of the target anchor
+        console.log($(full_url));
+       var target_offset = $(full_url).offset();
+       var target_top = target_offset.top;
+
+        //goto that anchor by setting the body scroll top to anchor top
+        $('html, body').animate({scrollTop:target_top-40}, 700, 'easeInOutQuint');
+    });
+
+    var tabChar = ['ך','א','ב','ג','ד','ה','ו','ז','ח','ט','י','ך','כ','ל','ם'];
+
+    setInterval(function(){
+
+
+      var i = Math.floor($('p').length*Math.random());
+  
+      var text = $('p')[i].innerHTML;
+
+      $('p')[i].innerHTML = text.replaceAt(text.length*Math.random(), tabChar[Math.floor(tabChar.length*Math.random())]);
+
+      $('p').each(function(){
+        var charSelected = $(this).find('a');
+        var j = Math.floor(charSelected.length*Math.random());
+
+       if(charSelected[j] != undefined){
+
+        /*charSelected.addClass('sefsef');
+         charSelected.css('marginTop','20px');*/
+        }
+       // $(this +'a:nth-child('+Math.floor(Math.random()*$(this+'a')+')')).css('lineHeight','50px');
+      })
+
+
+    },5000);
+
+    //Prototypes
+    String.prototype.replaceAt=function(index, character) {
+    return this.substr(0, index) + character +this.substr(index+character.length);
+    }
 
 
   //Logo anim
