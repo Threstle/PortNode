@@ -1,15 +1,20 @@
 $(function() {
 
+  var isScrolling;
+  var scrolltime;
+  var currentSect;
+  var oldSection;
   $('#loader').delay(2000).fadeOut(200);
 
-    $('.section').css('height',$(window).height());
+    $('.sousSection').css('height',$(window).height());
 
 
   //Menu gauche
 
     $('nav').mouseenter(function(){
         $('nav').addClass('navExpand');
-        $('#rightSide').addClass('rightSideShrink')
+        $('#rightSide').addClass('rightSideShrink');
+        $('#menuRightSide').addClass('menuRightSideHidden');
 
     })
 
@@ -23,20 +28,80 @@ $(function() {
 
     $('nav').mouseleave(function(){
         $('nav').removeClass('navExpand');
-        $('#rightSide').removeClass('rightSideShrink')
+        $('#rightSide').removeClass('rightSideShrink');
+        $('#menuRightSide').removeClass('menuRightSideHidden');
     })
+
+    $(window).scroll(function(){
+
+      $('#menuRightSide').addClass('menuRightSideHalfHidden');
+      if (scrolltime) {
+        clearTimeout(scrolltime);
+      }
+       //You consider 500 MS between scrolls to be "done" with scrolling.
+      scrolltime = setTimeout(function(){
+          var doc = document.elementFromPoint($(window).width()/2, $(window).height()/2);
+          $('.section').each(function(){
+            if($(this).has(doc).length){
+              currentSect = "#"+$(this).attr('id');
+             
+            }
+          });
+          refillRightMenu(currentSect);
+         $('#menuRightSide').removeClass('menuRightSideHalfHidden');
+      }, 150);
+      
+     
+    });
+
+    var refillRightMenu = function(section){
+      if(section != oldSection){
+       $('#menuRightSide').addClass('menuRightSideHidden');
+       
+       setTimeout(function(){
+       $('#menuRightSide ul').html('');
+        var k = 0;
+        if($(section).find('.sousSection').length > 1){
+          $(section).find('.sousSection').each(function(){
+            k++;
+            $('#menuRightSide ul').append('<li '+'href="'+$(this).attr('id')+'">'+$(this).attr('title')+'</li><span class="rightMenuSeparator"></span>');
+
+          });
+        }
+        setTimeout(function(){$('#menuRightSide').removeClass('menuRightSideHidden');},500);
+
+
+        $('#menuRightSide ul li').click(function(){
+           event.preventDefault();
+           var full_url = "#"+$(this).attr('href');
+           var target_offset = $(full_url).offset();
+     
+           var target_top = target_offset.top;
+ 
+           $('html, body').animate({scrollTop:target_top-40}, 700, 'easeInOutQuint');
+        });
+        oldSection = section;
+      },500);
+     }
+    }
+
 
     $('nav ul li').click(function(){
        event.preventDefault();
        var full_url = $(this).find('a').attr('href');
         //get the top offset of the target anchor
-        console.log($(full_url));
        var target_offset = $(full_url).offset();
        var target_top = target_offset.top;
 
         //goto that anchor by setting the body scroll top to anchor top
+        currentSect = full_url;
         $('html, body').animate({scrollTop:target_top-40}, 700, 'easeInOutQuint');
+
+       refillRightMenu(full_url);
+
+
     });
+
 
     var tabChar = ['ך','א','ב','ג','ד','ה','ו','ז','ח','ט','י','ך','כ','ל','ם'];
 

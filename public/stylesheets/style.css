@@ -374,4 +374,58 @@ font-weight: lighter;
 line-height: 50px;
 }
 
+#menuRightSide{
+-webkit-transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+   -moz-transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+     -o-transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+        transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  overflow: hidden !important;
+  right: 40px;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.menuRightSideHalfHidden{
+  opacity: 0.1!important;
+}
+
+.menuRightSideHidden{
+  opacity: 0!important;
+}
+
+#menuRightSide ul{
+  height: 70vh;
+  margin-top: 30vh;
+  color: black;
+}
+
+#menuRightSide ul span{
+   width: 1%;
+  height: 20px;
+  background-color: black;
+  float: left;
+  margin-left: 49%;
+  margin-right: 49%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#menuRightSide ul li{
+  margin-top: 10%;
+  opacity: 0.8;
+  cursor: pointer;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto;
+}
+
+#menuRightSide ul li:hover{
+  opacity: 1;
+}
+
 /*MENU SHIFT*/
