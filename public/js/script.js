@@ -4,6 +4,7 @@ $(function() {
   var scrolltime;
   var currentSect;
   var oldSection;
+  var currentProject;
   $('#loader').delay(2000).fadeOut(200);
 
     $('.sousSection').css('height',$(window).height());
@@ -34,7 +35,7 @@ $(function() {
 
     $(window).scroll(function(){
 
-      $('#menuRightSide').addClass('menuRightSideHalfHidden');
+     // $('#menuRightSide').addClass('menuRightSideHalfHidden');
       if (scrolltime) {
         clearTimeout(scrolltime);
       }
@@ -44,12 +45,25 @@ $(function() {
           $('.section').each(function(){
             if($(this).has(doc).length){
               currentSect = "#"+$(this).attr('id');
-             
+             $(this).find('.sousSection').each(function(){
+                 if($(this).has(doc).length){
+                  currentProject = $(this).attr('id');
+                }
+             })
             }
           });
+
+          
+          //Highlight current project
+          $('#menuRightSide ul li').removeClass('chosenProject');
+          $('#menuRightSide ul li').each(function(){
+            if($(this).attr('href')==currentProject){
+              $(this).addClass('chosenProject');
+            }
+          })
           refillRightMenu(currentSect);
-         $('#menuRightSide').removeClass('menuRightSideHalfHidden');
-      }, 150);
+      //   $('#menuRightSide').removeClass('menuRightSideHalfHidden');
+      }, 10);
       
      
     });
