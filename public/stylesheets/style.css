@@ -436,7 +436,6 @@ opacity: 0.5;
 @media screen and (max-width: 1024px) {
 
 #rightSide{
-  margin-top: 40px;
 }
 
 
@@ -450,26 +449,32 @@ nav{
 }
 
 #presentation h1{
-  font-size: 100px;
   text-align: center;
-  margin-bottom: 90px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  font-size: 3pc;
 }
 
 #contactPhoto{
   width: 80%;
-  border-radius: 720px;
   margin-left: 10%;
   margin-right: 10%;
+  border-radius: 360px;
+  margin-top: 20px;
 }
 
 .introductionPar{
-  text-align: center;
+/*  text-align: center;
   font-size: 3pc;
   padding: 7%;
   font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  font-weight: lighter;*/
+}
+
+.sousSection *{
+ 
+}
+
+#presentation{
+
 }
 
 }

@@ -7,7 +7,7 @@ $(function() {
   var currentProject;
   $('#loader').delay(2000).fadeOut(200);
 
-    $('.sousSection').css('height',$(window).height());
+    $('.sousSection').css('height',window.screen.height);
 
 
   //Menu gauche
