@@ -160,7 +160,7 @@ width: 100%;
   min-height: 955px;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  width: 60%;
+  max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
@@ -311,6 +311,7 @@ nav{
   left: 0;
     color: white;
   text-align: center;
+  z-index: 1;
 }
 
 .navExpand ul{
@@ -414,11 +415,12 @@ opacity: 0.5;
   margin-left: auto;
   margin-right: auto;
   font-family: Roboto;
-  color: black;
+  
+  color: #D3D3D3;
 }
 
 .chosenProject{
-  color: #D3D3D3!important;
+  color: black!important;
 }
 
 #menuRightSide ul li:hover{

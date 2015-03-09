@@ -12,7 +12,7 @@ $(function() {
 
   //Menu gauche
 
-    $('nav').mouseenter(function(){
+    $('nav').mouseover(function(){
         $('nav').addClass('navExpand');
         $('#rightSide').addClass('rightSideShrink');
         $('#menuRightSide').addClass('menuRightSideHidden');
@@ -125,23 +125,29 @@ $(function() {
       var i = Math.floor($('p').length*Math.random());
   
       var text = $('p')[i].innerHTML;
-
-      $('p')[i].innerHTML = text.replaceAt(text.length*Math.random(), tabChar[Math.floor(tabChar.length*Math.random())]);
-
-      $('p').each(function(){
+      var index = text.length*Math.random();
+      var letter = text.charAt(index);
+    
+      if(tabChar.indexOf(letter)==-1){
+       $('p')[i].innerHTML = text.replaceAt(index, tabChar[Math.floor(tabChar.length*Math.random())]);
+      }
+      else{
+          console.log(letter);
+      }
+     /* $('p').each(function(){
         var charSelected = $(this).find('a');
         var j = Math.floor(charSelected.length*Math.random());
 
        if(charSelected[j] != undefined){
 
-        /*charSelected.addClass('sefsef');
-         charSelected.css('marginTop','20px');*/
+        charSelected.addClass('sefsef');
+         charSelected.css('marginTop','20px');
         }
-       // $(this +'a:nth-child('+Math.floor(Math.random()*$(this+'a')+')')).css('lineHeight','50px');
-      })
+       // $(this +'a:nth-child('+Math.floor(Math.random()*$(this+'a')+')')).css('lineHeight','50px');*/
+      //})
 
 
-    },5000);
+    },5);
 
     //Prototypes
     String.prototype.replaceAt=function(index, character) {
