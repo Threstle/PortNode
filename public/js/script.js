@@ -147,7 +147,7 @@ $(function() {
       //})
 
 
-    },5);
+    },1000);
 
     //Prototypes
     String.prototype.replaceAt=function(index, character) {
