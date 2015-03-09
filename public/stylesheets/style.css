@@ -77,6 +77,9 @@ table {
     display: none; 
 }
 
+
+@media screen and (min-width: 1024px) {
+
 body{
 
 }
@@ -427,4 +430,46 @@ opacity: 0.5;
   opacity: 1;
 }
 
+}
+
 /*MENU SHIFT*/
+@media screen and (max-width: 1024px) {
+
+#rightSide{
+  margin-top: 40px;
+}
+
+
+
+nav{
+  display: none!important;
+}
+
+#menuRightSide{
+  display: none!important;
+}
+
+#presentation h1{
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+#contactPhoto{
+  width: 80%;
+  border-radius: 720px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.introductionPar{
+  text-align: center;
+  font-size: 3pc;
+  padding: 7%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+}
