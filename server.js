@@ -32,6 +32,8 @@ app.listen(8080)*/
 var express = require('express')
   , stylus = require('stylus')
   , nib = require('nib')
+  , fs = require('fs')
+  , ch = require('chaosify')
 
 
 var app = express();
@@ -48,11 +50,13 @@ app.use(express.static(__dirname + '/public'));
 
 // set the home page route
 app.get('/', function(req, res) {
-
+  ch.glitchFile('./img_to_glitch/photo.jpg','./public/img/photo.jpg',1),
 	// ejs render automatically looks in the views folder
 	res.render('aboutPage','layout')
 });
 
 app.listen(port, function() {
 	console.log('Our app is running on http://localhost:' + port);
+
 });
+
