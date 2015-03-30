@@ -5,9 +5,14 @@ $(function() {
   var currentSect;
   var oldSection;
   var currentProject;
-  $('#loader').delay(2000).fadeOut(200);
+ 
 
-    $('.sousSection').css('height',window.screen.height);
+  $( document ).ready(function(){
+      $('.sousSection').css('height',$(window).height());
+       $('#loader').delay(2000).fadeOut(200);
+       $('#loader h1').css('marginTop',$(window).height()/2-50);
+  });
+
 
 
   //Menu gauche
