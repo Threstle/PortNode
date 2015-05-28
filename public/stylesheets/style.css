@@ -151,19 +151,19 @@ h1{
 
 
 #rightSide{
-    -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); 
-   -moz-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-    -o-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-float: left;
-height: 100%;
-width: 100%;
-
-   -webkit-transform:translateX(10px);
-   -ms-transform:translateX(10px);
-   -o-transform:translateX(10px);
-   -moz-transform:translateX(10px);
-   transform:translateX(10px);
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  float: left;
+  height: 100%;
+  width: calc(100% - 300px);
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  transform: translateX(10px);
+  margin-left: 100px;
 
 }
 
@@ -183,10 +183,11 @@ width: 100%;
   min-height: 955px;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
+  width: 74%;
+  padding-left: 200px;
 
 }
 
@@ -202,8 +203,8 @@ width: 100%;
   margin-top: 50px;
   font-size: 19px;
   line-height: 47px;
-  padding-left: 32px;
-  border-right: solid;
+
+
 
 }
 
@@ -223,23 +224,23 @@ width: 100%;
       text-align: left;
 }
 
-#contentRight .skillsPar{
-  width: 75%;
-  text-align: right;
-  border-left: solid;
+
+#skills *, #experience * {
+  margin-top: 20px!important;
+  text-align: center!important;
+}
+
+h2.left{
 
 }
 
 #contentRight .photoProjet{
-  position: absolute;
-  width: 340px;
-  border-radius: 360px;
+  float: left;
+  width: 30%;
 
 }
 
-.glitchPhoto{
 
-}
 
 /*-- Timbre --*/
 
@@ -258,12 +259,9 @@ width: 100%;
 /*-- Russian Planet --*/
 
 #contentRight .russianPar{
-   width: 75%;
+  width: 75%;
   text-align: left;
-  border-right: solid;
-  border-right-width: initial;
-  border-right-style: solid;
-  border-right-color: initial;
+
   margin-left: 29%;
   
 }
@@ -396,7 +394,7 @@ line-height: 50px;
   height: 100%;
   width: 200px;
   overflow: hidden !important;
-  right: 40px;
+  right: 0px;
   color: white;
   text-align: center;
   opacity: 0.5;
@@ -472,6 +470,11 @@ nav{
   display: none!important;
 }
 
+.sousSection{
+  float: left;
+  width: 100%;
+}
+
 .sousSection h1{
   margin-top: 10%;
   margin-bottom: 10%;
@@ -527,5 +530,12 @@ nav{
 #presentation{
 
 }
+
+}
+
+/*--- Games ---*/
+
+.gamesPar{
+  width: 30%;
 
 }

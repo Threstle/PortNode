@@ -8,7 +8,7 @@ $(function() {
  
 
   $( document ).ready(function(){
-      $('.sousSection').css('height',$(window).height());
+      $('.sousSection').css('min-height',$(window).height());
        $('#loader').delay(2000).fadeOut(200);
        $('#loader h1').css('marginTop',$(window).height()/2-50);
   });
@@ -152,7 +152,7 @@ $(function() {
       //})
 
 
-    },1000);
+    },100000);
 
     //Prototypes
     String.prototype.replaceAt=function(index, character) {
