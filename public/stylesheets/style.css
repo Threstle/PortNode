@@ -162,9 +162,18 @@ h1{
   -moz-transform: translateX(10px);
   transform: translateX(10px);
   margin-left: 100px;
-
+  padding-top: 30px;
 }
 
+#rightSide img{
+  border-radius: 360px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
 
 .rightSideShrink{
 
@@ -214,13 +223,13 @@ h1{
   margin-top: 50px;
   font-size: 19px;
   line-height: 47px;
-  padding-left: 32px;
+
 
 }
 
 #contentRight .introductionPar{
     border-right: solid;
-      width: 23%;
+      width: 300px;
       text-align: left;
 }
 
@@ -235,8 +244,6 @@ h2.left{
 }
 
 #contentRight .photoProjet{
-  float: left;
-  width: 30%;
 
 }
 
@@ -252,13 +259,10 @@ h2.left{
   
 }
 
-#contentRight .timbrePhoto{
-  right: 15%;
-}
 
 /*-- Russian Planet --*/
 
-#contentRight .russianPar{
+/*#contentRight .russianPar{
   width: 75%;
   text-align: left;
 
@@ -269,7 +273,7 @@ h2.left{
 #contentRight .russianPhoto{
   left: 15%;
 }
-
+*/
 #contentRight *{
   /*---transition---*/
   margin-left: auto;
@@ -308,16 +312,7 @@ h2.left{
 
 
 #contentRight #contactPhoto{
-    /*---transition---*/
-  width: 20%;
-  border-radius: 360px;
-  margin-right: 40%;
-  margin-left: 40%;
-  margin-top: 15px;
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
+
 }
 
 
@@ -533,15 +528,46 @@ nav{
 
 }
 
-/*--- Games ---*/
+/*--- Projects ---*/
 
-.gamesPar{
-  width: 30%;
+.projectBlock{
 
 }
 
 
+
+.projectBlock p{
+  text-align: center;
+  float: left;
+  min-width: 300px;
+}
+
+/*--- Games ---*/
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
+
+  #rightSide{
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  float: left;
+  height: 100%;
+  width: calc(100%);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  margin-left: 0;
+
+  }
+
   #menuLeftSide{
     display: none!important;
   }
