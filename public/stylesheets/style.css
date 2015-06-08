@@ -247,33 +247,6 @@ h2.left{
 
 }
 
-
-
-/*-- Timbre --*/
-
-#contentRight .timbrePar{
-  width: 75%;
-  text-align: right;
-  border-left: solid;
-  margin-left: -10%;
-  
-}
-
-
-/*-- Russian Planet --*/
-
-/*#contentRight .russianPar{
-  width: 75%;
-  text-align: left;
-
-  margin-left: 29%;
-  
-}
-
-#contentRight .russianPhoto{
-  left: 15%;
-}
-*/
 #contentRight *{
   /*---transition---*/
   margin-left: auto;
@@ -468,6 +441,7 @@ nav{
 .sousSection{
   float: left;
   width: 100%;
+
 }
 
 .sousSection h1{
@@ -540,6 +514,7 @@ nav{
   text-align: center;
   float: left;
   min-width: 300px;
+
 }
 
 /*--- Games ---*/
