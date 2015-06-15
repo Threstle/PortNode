@@ -101,12 +101,21 @@ body{
 }
 
 h1{
-  font-size: 30px;
+  font-size: 80px;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
 }
 
+h2{
+  font-weight: bold;
+  font-size: 19px;
+  font-style: italic;
 
+}
+
+p{
+  font-size: 19px;
+}
 
 #logo{
   margin-left: auto;
@@ -149,11 +158,12 @@ h1{
 
 #contactPhoto{
   border-radius: 360px;
-  max-width: 300px;
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 290px;
   display: block;
 }
 
@@ -207,7 +217,7 @@ h1{
 
 }
 
-#contentRight h2{
+#skills h2, #experience h2{
   text-align: left;
   width: 23%;
   margin-top: 50px;
@@ -221,7 +231,10 @@ h1{
 }
 
 .preludeSection{
-  margin-bottom: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .preludeSection h1{
@@ -235,9 +248,7 @@ h1{
 }
 
 #contentRight p{
-  
 
-  font-size: 19px;
   line-height: 47px;
   padding: 0% 2% 0% 2%;
 
@@ -323,15 +334,12 @@ h2.left{
 }
 
 .projectBlock h2{
-  margin-top: 50px!important;
-  font-size: 19px!important;
+   margin-top: 50px!important;
   line-height: 47px!important;
-  border-left: solid!important;
   font-style: italic!important;
   margin-bottom: 50px!important;
-  border: solid!important;
   text-align: center!important;
-  width: 25%!important;
+  width: 100%;
   margin-right: auto!important;
   /* Sale, à corriger*/
 }
@@ -603,6 +611,29 @@ nav{
 
 @media screen and (max-width: 1024px) {
 
+  h1{
+    font-size: 60px!important;
+
+  }
+
+  h2{
+     font-size: 40px!important;
+
+
+  }
+
+  p{
+    font-size: 30px!important;
+  }
+
+  #contentRight h2{
+    border:none!important;
+    text-align: center!important;
+    width: 100%!important;
+    line-height: 47px!important;
+    font-style: italic!important;
+  }
+
   #rightSide{
   -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -634,8 +665,30 @@ nav{
     width: 100%!important;
   }
 
+  #section1{
+    margin-top: 150px!important;
+  }
+
+  .introductionPar{
+    border-right: none!important;
+    text-align: center!important;
+    width: 80%!important
+  }
+
+  #skills, #experience{
+    width: 90%!important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .separator{
+    margin: 50px 0% 50px 0%!important;
+  }
+
   .projectBlock h2{
     width: 100%!important;
+    padding: 3% 0% 3% 0%;
+    border: solid;
   }
 
   .projectBlock img{
@@ -643,6 +696,7 @@ nav{
   }
 
   .projectBlock p{
+    margin-top: 30px;
     width: 100%!important;
   }
 

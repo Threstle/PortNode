@@ -124,7 +124,7 @@ $(function() {
 
     var tabChar = ['ך','א','ב','ג','ד','ה','ו','ז','ח','ט','י','ך','כ','ל','ם'];
 
-    setInterval(function(){
+/*    setInterval(function(){
 
 
       var i = Math.floor($('p').length*Math.random());
@@ -139,24 +139,13 @@ $(function() {
       else{
           console.log(letter);
       }
-     /* $('p').each(function(){
-        var charSelected = $(this).find('a');
-        var j = Math.floor(charSelected.length*Math.random());
-
-       if(charSelected[j] != undefined){
-
-        charSelected.addClass('sefsef');
-         charSelected.css('marginTop','20px');
-        }
-       // $(this +'a:nth-child('+Math.floor(Math.random()*$(this+'a')+')')).css('lineHeight','50px');*/
-      //})
 
 
-    },100000);
+    },100000);*/
 
     //Prototypes
     String.prototype.replaceAt=function(index, character) {
-    return this.substr(0, index) + character +this.substr(index+character.length);
+      return this.substr(0, index) + character +this.substr(index+character.length);
     }
 
 
