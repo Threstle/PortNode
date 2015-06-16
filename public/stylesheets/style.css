@@ -88,12 +88,12 @@ table {
 }
 
 #loader h1{
-  width: 20%;
+  margin-top: 459.5px;
+
   text-align: center;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  border: solid;
-  padding: 3%;
 }
 
 body{
@@ -346,18 +346,18 @@ h2.left{
 
 .projectBlock img{
   float: left;
-  width: 280px;
+  width: 25%;
   margin-right: 5%;
 }
 
 .projectBlock p{
   float: left;
-  width: 60%;
+  width: 70%;
   padding: 0%!important;
   text-align: left;
 }
 
-#section7{
+#section8{
   float: left;
   text-align: center;
 }
